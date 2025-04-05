@@ -12,6 +12,8 @@ body,
     padding: 0;
 }
 .container {
+    display: flex;
+    flex-direction: column;
     width: var(--w);
     margin: 0 calc((100% - var(--w)) / 2);
 }
@@ -21,11 +23,37 @@ main {
 }
 .first-image,
 .second-image {
+    display: flex;
     margin-top: 10px;
+    width: 100%;
 }
+
 .heels-image {
     height: 10vh;
     width: auto;
+}
+.bullets {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.first-bullet,
+.second-bullet {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    background-color: gray;
+    border-radius: 50%;
+    transform: translateX(-70%);
+}
+.second-bullet {
+    background-color: #c4c4dc93;
+    transform: translateX(70%);
+}
+.row-with-bullets-on-top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .four-heels-row {
     display: flex;
@@ -61,6 +89,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .heels-image-2 {
     width: auto;
@@ -127,9 +156,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
     text-align: center;
     line-height: 2em;
+    width: 50%;
 }
 .sale-off-shop {
     display: flex;
@@ -142,9 +172,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-right: 25rem;
+    /* margin-right: 25rem; */
     text-align: center;
     line-height: 2em;
+    width: 50%;
 }
 .sale-off-models p::first-line {
     text-transform: uppercase;
