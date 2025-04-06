@@ -1,0 +1,51 @@
+.footer {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-lower {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.bank-icon {
+    width: 1.5rem;
+    height: 1rem;
+}
+.footer-column p {
+    text-transform: uppercase;
+}
+.footer-lower a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+.footer-fontawesome > a {
+    font-size: 1.8rem;
+}
+.footer-fontawesome {
+    display: flex;
+    gap: 1rem;
+}
+.email {
+    width: 12rem;
+    height: 2rem;
+}
+.sign-up {
+    width: 6rem;
+    height: 1.5rem;
+    background-color: black;
+    color: white;
+}
+.track-order,
+.return-item {
+    background-color: transparent;
+    border: 0.1rem solid gray;
+}
