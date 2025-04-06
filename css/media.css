@@ -26,9 +26,10 @@
         flex-direction: column;
         align-items: flex-end;
         gap: 0.5rem;
+        width: 100%;
     }
     .search-row::after {
-        left: 1em;
+        left: 12.5em;
     }
     .search-bar {
         width: 15rem;
@@ -41,12 +42,16 @@
     }
     .search-bar {
         width: 10rem;
+        margin-right: 1rem;
+    }
+    .fontawesome {
+        margin-right: 1rem;
     }
     .search-row::after {
-        left: -2em;
+        display: none;
     }
     .sign-in {
-        align-items: flex-start;
+        align-items: flex-end;
     }
     .four-heels-row {
         justify-content: center;
